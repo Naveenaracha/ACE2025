@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog - Language Learning App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .course-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .course-card {
+            background-color: white;
+            width: 30%;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card img {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .course-card h3 {
+            margin: 10px 0;
+        }
+        .course-card p {
+            margin: 10px 0;
+        }
+        .course-card .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .course-card .btn:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Catalog</h1>
+    </header>
+    <div class="container">
+        <div class="course-catalog">
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="Spanish Course">
+                <h3>Spanish for Beginners</h3>
+                <p>Learn the basics of Spanish with interactive lessons.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="French Course">
+                <h3>French Intermediate</h3>
+                <p>Improve your French skills with intermediate-level courses.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="German Course">
+                <h3>German Advanced</h3>
+                <p>Master German with advanced-level lessons.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="Japanese Course">
+                <h3>Japanese for Beginners</h3>
+                <p>Start learning Japanese with our beginner-friendly course.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="Chinese Course">
+                <h3>Chinese Intermediate</h3>
+                <p>Enhance your Chinese skills with intermediate lessons.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="course-card">
+                <img src="https://via.placeholder.com/300" alt="Italian Course">
+                <h3>Italian Advanced</h3>
+                <p>Become proficient in Italian with advanced courses.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Language Learning App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
