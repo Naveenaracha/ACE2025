@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - Language Learning App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .lesson {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .lesson h2 {
+            margin-top: 0;
+        }
+        .lesson-content {
+            margin-top: 20px;
+        }
+        .lesson-content p {
+            margin: 20px 0;
+        }
+        .lesson-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .quiz {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .quiz h3 {
+            margin-top: 0;
+        }
+        .quiz .question {
+            margin: 20px 0;
+        }
+        .quiz .question p {
+            margin: 10px 0;
+        }
+        .quiz .question label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#overview">Overview</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#progress">Progress</a>
+        <a href="#community">Community</a>
+        <a href="#settings">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Lesson</h1>
+        </header>
+        <div class="container">
+            <div class="lesson">
+                <h2>Lesson Title</h2>
+                <div class="lesson-content">
+                    <p>This is the lesson content. Here you can add text, images, and other multimedia content to enhance the learning experience.</p>
+                    <img src="https://via.placeholder.com/600x300" alt="Lesson Image">
+                    <p>Continue the lesson content here. Provide
