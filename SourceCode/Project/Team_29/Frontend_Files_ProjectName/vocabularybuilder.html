@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Builder - Language Learning App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin: 0;
+        }
+        .word-form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .word-form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .word-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .word-form button:hover {
+            background-color: #45a049;
+        }
+        .word-list {
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .word-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .word-list-item p {
+            margin: 0;
+        }
+        .word-list-item .delete-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .word-list-item .delete-btn:hover {
+            background-color: #d32f2f;
+        }
+        .quiz {
+            text-align: center;
+        }
+        .quiz button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .quiz button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vocabulary Builder</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Add New Words</h2>
+            <form class="word-form">
+                <input type="text" placeholder="Enter a new word" required>
+                <button type="submit">Add</button>
+            </form>
+            <div class="word-list">
+                <div class="word-list-item">
+                    <p>Word 1</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+                <div class="word-list-item">
+                    <p>Word 2</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+                <!-- Repeat this structure dynamically with JavaScript -->
+            </div>
+        </div>
+        <div class="section">
+            <h2>Review Words</h2>
+            <div class="word-list">
+                <div class="word-list-item">
+                    <p>Word 1</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+                <div class="word-list-item">
+                    <p>Word 2</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+                <!-- Repeat this structure dynamically with JavaScript -->
+            </div>
+        </div>
+        <div class="section quiz">
+            <h2>Practice Quiz</h2>
+            <p>Test your knowledge with a quick quiz!</p>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Language Learning App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
